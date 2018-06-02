@@ -32,6 +32,7 @@ def main():
     maxConnections = 10
     connection_lock = BoundedSemaphore(value = maxConnections)
     print '>>>>>>>>>>>>破解主机：<<<<<<<<<<<<<<<' 
+    user=open('user.txt','r')   
     pwd=open('pwd.txt','r')    
     for line_u in user:
         for line_p in pwd:
